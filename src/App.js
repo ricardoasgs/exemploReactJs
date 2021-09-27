@@ -1,8 +1,14 @@
 import React from "react";
-import "./App.css"
+import "./App.css";
 
-function App(){
-  return <h1>Hello World ReactJS</h1>;
+import TechList from "./components/TechList";
+
+function App() {
+  return (
+    <>
+      <TechList />
+    </>
+  );
 }
 
 export default App;
