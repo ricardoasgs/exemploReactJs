@@ -1,8 +1,7 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-// import { Container } from './styles';
-
-function TechItem({tech, onDelete}) {
+function TechItem({ tech, onDelete }) {
   return (
     <li>
       {tech}
@@ -11,6 +10,15 @@ function TechItem({tech, onDelete}) {
       </button>
     </li>
   );
+}
+
+TechItem.defaultProps = {
+  tech: "Padrão",
+};
+
+TechItem.PropTypes = {
+  tech: PropTypes.string,
+  onDelete: PropTypes.func.isRequired
 }
 
 export default TechItem;
